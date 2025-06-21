@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Snake Game with Hand Gestures</title>
+    <style>
+        canvas {
+            background: #000;
+            display: block;
+            margin: 20px auto;
+        }
+        #label-container, #lastGesture {
+            text-align: center;
+            color: #fff;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body style="background-color:#111" onload="init()">
+    <h2 style="text-align:center; color:white;">Snake Game with Hand Gestures</h2>
+    <div id="webcam-container"></div>
+    <div id="label-container"></div>
+    <div id="lastGesture"></div>
+    <canvas id="gameCanvas" width="400" height="400"></canvas>
+
+    <!-- TensorFlow and Teachable Machine Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest"></script>
